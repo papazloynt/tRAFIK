@@ -1,0 +1,38 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"16 loop_delay.c
+[; ;loop_delay.c: 16: void MSdelay(unsigned int val) {
+[v _MSdelay `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _MSdelay ]
+[v _val `ui ~T0 @X0 1 r1 ]
+[f ]
+"17
+[; ;loop_delay.c: 17:      unsigned int i,j;
+[v _i `ui ~T0 @X0 1 a ]
+[v _j `ui ~T0 @X0 1 a ]
+"18
+[; ;loop_delay.c: 18:         for(i=0;i<=val;i++)
+{
+[e = _i -> -> 0 `i `ui ]
+[e $U 5  ]
+[e :U 2 ]
+"19
+[; ;loop_delay.c: 19:             for(j=0;j<81;j++);
+{
+[e = _j -> -> 0 `i `ui ]
+[e $ < _j -> -> 81 `i `ui 6  ]
+[e $U 7  ]
+[e :U 6 ]
+[e ++ _j -> -> 1 `i `ui ]
+[e $ < _j -> -> 81 `i `ui 6  ]
+[e :U 7 ]
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 5 ]
+[e $ <= _i _val 2  ]
+[e :U 3 ]
+}
+"20
+[; ;loop_delay.c: 20: }
+[e :UE 1 ]
+}

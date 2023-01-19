@@ -1,0 +1,280 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"13 C:\Users\Alexander\Desktop\testmf\course.X\ds18b20.c
+[v _ow_reset ow_reset `(uc  1 e 1 0 ]
+"47
+[v _read_byte read_byte `(uc  1 e 1 0 ]
+"77
+[v _write_byte write_byte `(v  1 e 1 0 ]
+"114
+[v _calculate_tempereture calculate_tempereture `(v  1 e 1 0 ]
+"30 C:\Users\Alexander\Desktop\testmf\course.X\lcd.c
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+"40
+[v _LCD_Char LCD_Char `(v  1 e 1 0 ]
+"51
+[v _LCD_String LCD_String `(v  1 e 1 0 ]
+"61
+[v _LCD_String_xy LCD_String_xy `(v  1 e 1 0 ]
+"16 C:\Users\Alexander\Desktop\testmf\course.X\loop_delay.c
+[v _MSdelay MSdelay `(v  1 e 1 0 ]
+"9 C:\Users\Alexander\Desktop\testmf\course.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"9 C:\Users\Alexander\Desktop\testmf\course.X\sendner.c
+[v _send_signals send_signals `(v  1 e 1 0 ]
+"17
+[v _send_signal_to_doors_and_windows send_signal_to_doors_and_windows `(v  1 e 1 0 ]
+"232 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-K_DFP/1.7.134/xc8\pic\include\proc\pic18f45k50.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
+"361
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+[s S229 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"2943
+[s S238 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+`uc 1 OSC2 1 0 :1:6 
+]
+[s S246 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S252 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S255 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 RJPU 1 0 :1:7 
+]
+[u S259 . 1 `S229 1 . 1 0 `S238 1 . 1 0 `S246 1 . 1 0 `S252 1 . 1 0 `S255 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES259  1 e 1 @3968 ]
+[s S106 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"3336
+[s S146 . 1 `uc 1 SPP0 1 0 :1:0 
+`uc 1 SPP1 1 0 :1:1 
+`uc 1 SPP2 1 0 :1:2 
+`uc 1 SPP3 1 0 :1:3 
+`uc 1 SPP4 1 0 :1:4 
+`uc 1 SPP5 1 0 :1:5 
+`uc 1 SPP6 1 0 :1:6 
+`uc 1 SPP7 1 0 :1:7 
+]
+[s S155 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S158 . 1 `S106 1 . 1 0 `S146 1 . 1 0 `S155 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES158  1 e 1 @3971 ]
+"3891
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"4626
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"4848
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"5248
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S97 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"5280
+[u S115 . 1 `S97 1 . 1 0 `S106 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES115  1 e 1 @3989 ]
+"12356
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"15229
+[v _LATD0 LATD0 `VEb  1 e 0 @31840 ]
+"15232
+[v _LATD1 LATD1 `VEb  1 e 0 @31841 ]
+"9 C:\Users\Alexander\Desktop\testmf\course.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"28
+[v main@i i `f  1 a 4 62 ]
+"16
+[v main@temp temp `[2]i  1 a 4 68 ]
+"14
+[v main@skip_first_few_step skip_first_few_step `i  1 a 2 66 ]
+"35
+} 0
+"9 C:\Users\Alexander\Desktop\testmf\course.X\sendner.c
+[v _send_signals send_signals `(v  1 e 1 0 ]
+{
+"14
+} 0
+"17
+[v _send_signal_to_doors_and_windows send_signal_to_doors_and_windows `(v  1 e 1 0 ]
+{
+"23
+} 0
+"114 C:\Users\Alexander\Desktop\testmf\course.X\ds18b20.c
+[v _calculate_tempereture calculate_tempereture `(v  1 e 1 0 ]
+{
+[v calculate_tempereture@temp temp `*.39i  1 p 2 6 ]
+"136
+} 0
+"77
+[v _write_byte write_byte `(v  1 e 1 0 ]
+{
+[v write_byte@val val `uc  1 a 1 wreg ]
+"79
+[v write_byte@i i `uc  1 a 1 3 ]
+"77
+[v write_byte@val val `uc  1 a 1 wreg ]
+"80
+[v write_byte@val val `uc  1 a 1 2 ]
+"103
+} 0
+"47
+[v _read_byte read_byte `(uc  1 e 1 0 ]
+{
+"49
+[v read_byte@i i `uc  1 a 1 3 ]
+[v read_byte@result result `uc  1 a 1 2 ]
+"62
+} 0
+"13
+[v _ow_reset ow_reset `(uc  1 e 1 0 ]
+{
+"32
+} 0
+"16 C:\Users\Alexander\Desktop\testmf\course.X\loop_delay.c
+[v _MSdelay MSdelay `(v  1 e 1 0 ]
+{
+"17
+[v MSdelay@j j `ui  1 a 2 4 ]
+[v MSdelay@i i `ui  1 a 2 2 ]
+"16
+[v MSdelay@val val `ui  1 p 2 0 ]
+"20
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 59 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 58 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 50 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S612 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S617 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S620 . 4 `l 1 i 4 0 `d 1 f 4 0 `S612 1 fAsBytes 4 0 `S617 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S620  1 a 4 19 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 13 ]
+[s S688 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S691 . 2 `s 1 i 2 0 `us 1 n 2 0 `S688 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S691  1 a 2 23 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 18 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 17 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 12 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 44 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 37 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 42 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 49 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 48 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 41 ]
+"11
+[v ___fldiv@b b `d  1 p 4 25 ]
+[v ___fldiv@a a `d  1 p 4 29 ]
+"185
+} 0

@@ -1,0 +1,65 @@
+// LCD PRINTER
+//uint16_t raw_temp;
+//  OSCCON = 0x72;   // set internal oscillator to 8MHz
+//  ANSELD = 0;
+//  ANSELA = 0;
+//  TRISA = 0;
+//  unsigned short TempL, TempH;
+//unsigned int t, t2;
+//float difference1=0, difference2=0;      
+//
+//LCD_Init();
+//char Temperature[10];
+//LCD_String_xy(0,0,"Temperature");
+//LCD_String_xy(1,0,"           ");
+//
+//  while(1) {
+//    float i=0;
+//   
+//    int  temp[2];
+//    calculate_tempereture(temp);
+//
+//    if((temp[1] & 0x80)!=0){
+//        t=temp[1];// Store tempH value in t = 1111 1111  .
+//            t<<=8;//after bitwise left shift 8 times value in t will be 1111 1111 0000 0000.  
+//            t=t|temp[0];// t = 1111 1111 0000 0000 | 0101 1110 [ result t = 1111 1111 0101 1110] 
+//            t=t-1;//t = t-1 in this case t = 1111 1111 0101 1101.
+//            t=~t;// t = 0000 0000 1010 0010.
+//            t>>=4;// t = 0000 0000 0000 1010.
+//
+//        t=t*100;// t = 10 * 100 = 1000.
+//        t2=TempL; //Store tempL value = 0101 1110.
+//        t2=t2-1;// t2= 0101 1101
+//                t2=~t2;//t2 = 1010 0010
+//                t2=t2&0x0f;// t2 = 1010 0010 | 0000 1111 = 0000 0010
+//        t2=t2 * 6.25; // 0000 00010 = 2 x 6.25 = 12.50
+//        i=((unsigned int)t ) + (unsigned int)t2; //put both value in one variable 1000 + 12.5 = 1012.5
+//
+//        /*This if-else condition done because LCD would not refresh till temperature change -.20 or +.20 degree*/
+//        pre_val=aft_val;  
+//        difference1 = pre_val - i; 
+//        difference2 = i - pre_val;
+//
+//        if(difference1 > temp_gap || difference2 > temp_gap){
+//            aft_val = i;
+//            print_val_to_LCD(1, aft_val);
+//        } else{
+//            print_val_to_LCD(1, pre_val);
+//        }
+//    } else {
+//        i=((unsigned int)temp[1] << 8 ) + (unsigned int)temp[0];
+//        i = i * 6.25; 
+//
+//        pre_val=aft_val;  
+//        difference1 = pre_val - i; 
+//        difference2 = i - pre_val;
+//
+//        if(difference1 > temp_gap || difference2 > temp_gap){
+//        aft_val = i;
+//            print_val_to_LCD(0, aft_val);
+//        } else{
+//            print_val_to_LCD(0, pre_val);
+//        }           
+//    }
+//    
+//  }
